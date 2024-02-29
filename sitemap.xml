@@ -5,9 +5,4 @@
          <lastmod>2024-02-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
-    <url>
-         <loc>http://127.0.0.1:8000/page1/</loc>
-         <lastmod>2024-02-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
 </urlset>
