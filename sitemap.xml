@@ -10,4 +10,9 @@
          <lastmod>2024-03-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>http://127.0.0.1:8000/lectures/page1/</loc>
+         <lastmod>2024-03-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
