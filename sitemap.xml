@@ -6,17 +6,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>http://127.0.0.1:8000/demo/</loc>
+         <lastmod>2024-03-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>http://127.0.0.1:8000/courses/C2013/</loc>
          <lastmod>2024-03-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/courses/C2013/lectures/lec1/</loc>
-         <lastmod>2024-03-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://127.0.0.1:8000/courses/C2013/lectures/page1/</loc>
          <lastmod>2024-03-02</lastmod>
          <changefreq>daily</changefreq>
     </url>

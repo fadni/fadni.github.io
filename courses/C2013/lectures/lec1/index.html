@@ -14,7 +14,7 @@
         <link rel="prev" href="../../">
       
       
-        <link rel="next" href="../page1/">
+        <link rel="next" href="../../../CS404/">
       
       
       <link rel="icon" href="../../../../images/favicon.ico">
@@ -58,6 +58,8 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
     
@@ -214,16 +216,19 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../../../.." class="md-tabs__link">
-        
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../.." class="md-tabs__link">
+          
   
     
   
   Home
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -298,16 +303,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../.." class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Home
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../demo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Demo
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -376,8 +447,6 @@
       
         
           
-        
-      
         
       
         
@@ -522,31 +591,34 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#data-types-and-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Types and Expressions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Types and Expressions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../page1/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Assgnement
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -697,6 +769,30 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#data-types-and-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Types and Expressions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Types and Expressions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -719,9 +815,9 @@
 <p>Programming is learned by writing programs</p>
 <p><em>Brian Kernighan</em></p>
 </blockquote>
-<p>Indeed! If you want to be professional in programming, then you must spend a lot of (really a lot
-of) time writing several programs in front of a PC/laptop. Writing codes in a paper is not sufficient.
-You must sit and type your programs. The purpose is to get familiar with programming environment
+<p>Indeed! If you want to be professional in programming, then you must spend a lot of time (really a lot
+of time) writing several programs in front of a PC/laptop. Writing codes in a paper is not sufficient.
+You must write and run your programs. The purpose is to get familiar with programming environment
 and give you a feel of how you can get a computer to do things for you.</p>
 <div class="admonition example">
 <p class="admonition-title">Programming</p>
@@ -729,18 +825,18 @@ and give you a feel of how you can get a computer to do things for you.</p>
 </div>
 <p>The figure below shows a very basic view of the program development process. Generally, programming involves two activities: <strong>writing and testing</strong>. After designing your algorithm, you go through the
 following steps:</p>
-<ol>
-<li>Edit your program and save it in a source file,</li>
-<li>Compile the source file to find any syntax error; if there is one, you return back to Step (1) to fix it. The compiler will emit an error message to guide you on how to fix the error. If the source file has compiled successfully, an executable file would be generated.</li>
-<li>Prepare a list of test cases to cover all execution paths to examine the logic of your algorithm.</li>
-<li>Test your program using a test case. If your program outputs unexpected result (i.e., the test case failed), which indicates a logical error, then you need to go back to Step (1).Sometimes, you may need to return back to the very beginning and revise your algorithm.</li>
-<li>If your program passed all test cases, then you are done.</li>
-</ol>
 <pre class="mermaid"><code>flowchart LR
     S1[Edit] --&gt; S2[Compile] --&gt; C1{error?} -- No --&gt; S3[Run a test] --&gt; C2{Pass?} -- Yes --&gt; C3{Another test?} -- No --&gt; F(Done)
     C1 -- Yes --&gt; S1
     C2 -- No --&gt; S1
     C3 -- Yes --&gt; S3</code></pre>
+<ol>
+<li>Edit your program and save it in a source file,</li>
+<li>Compile the source file to find any syntax error; if there is one, you return back to Step (1) to fix it. The compiler will emit an error message to guide you on how to fix the error. If the source file has compiled successfully, an executable file would be generated.</li>
+<li>Prepare a list of test cases to cover all execution paths to examine the logic of your algorithm.</li>
+<li>Pick one test case and run your program. If your program outputs unexpected result (i.e., the test case is failed and this indicates a logical error), then you need to go back to Step (1). Sometimes, you may need to return back to the very beginning and revise your algorithm.</li>
+<li>If your program passed all test cases, then you are done.</li>
+</ol>
 <h3 id="debugging-and-ide">Debugging and IDE</h3>
 <p>You, as a programmer, must test your program thoroughly, comparing the expected results to those that actually occur. When defects are found, they must be traced back to the source of the problem in the code/algorithm and corrected. The process of finding and correcting defects in a program is called <em>debugging</em>. Logical errors can manifest themselves in many ways, and the actual root cause might be difficult to discover.</p>
 <p>A software development environment is a set of tools used to create, compile, run, test, and modify
@@ -758,8 +854,8 @@ be fully aware of statements’ semantics.</p>
 <p>Programming languages are generally unambiguous, which means the semantics of a program are
 well defined. That is, there is one and only one interpretation for each statement. For example:</p>
 <div class="language-cpp highlight"><span class="filename">Example</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">length</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="c1">// define a variable of type int</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="n">length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">99</span><span class="p">;</span><span class="w"> </span><span class="c1">// What is the semantics of this statement? (1)</span>
-</span></code></pre></div>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="hll"><span class="w">    </span><span class="n">length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">99</span><span class="p">;</span><span class="w"> </span><span class="c1">// What is the semantics of this statement? (1)</span>
+</span></span></code></pre></div>
 <ol>
 <li>Put 99 to the object named <code>length</code>.</li>
 </ol>
@@ -779,7 +875,7 @@ the assignment statement is read "Put 99 into the object named <code>length</cod
 </span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 </span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="p">}</span>
 </span></code></pre></div>
-<div class="admonition exmaple">
+<div class="admonition exercise">
 <p class="admonition-title">Exercises</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Questions</label><label for="__tabbed_1_2">Answer</label></div>
 <div class="tabbed-content">
@@ -837,6 +933,43 @@ the assignment statement is read "Put 99 into the object named <code>length</cod
 </div>
 </div>
 </div>
+</div>
+<h2 id="data-types-and-expressions">Data Types and Expressions</h2>
+<p>Recall the following. It is important to understand and remember each definition</p>
+<div class="admonition abstract">
+<p class="admonition-title">Definitions</p>
+<ul>
+<li>A <strong>type</strong> defines a set of possible values and a set of operations defined on them.</li>
+<li>An <strong>object</strong> is some memory that holds a value.</li>
+<li>A <strong>value</strong> is a set of bits in memory interpreted according to a type.</li>
+<li>A <strong>variable</strong> is a named object.</li>
+<li>A <strong>declaration</strong> is a statement that gives a name to an object along with a type.</li>
+<li>A <strong>definition</strong> is a declaration that sets aside memory for an object.</li>
+</ul>
+</div>
+<h3 id="examples">Examples</h3>
+<div class="admonition question annotate">
+<p class="admonition-title">What is the semantics of:</p>
+<p><div class="language-c++ highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">99</span><span class="p">;</span>
+</span></code></pre></div>
+<img _="," align="right" alt="Data Type" src="../../../../images/datatype.png" width="300" />
+This is a <em>definition</em>:</p>
+<ol>
+<li>It creates a new object by allocating four-byte memory. (1)</li>
+<li>The new object will be named <code>length</code>.</li>
+<li>The data type of <code>length</code> is <code class="language-c++ highlight"><span class="kt">int</span></code>.</li>
+<li>The object will be <mark class="critic">initialized</mark> with the value of 99.</li>
+</ol>
+</div>
+<ol>
+<li>I am assuming the size of <code class="language-c++ highlight"><span class="kt">int</span></code> is 4 bytes</li>
+</ol>
+<p>Be aware of the highlighted text above. The object will be initialized, not assigned.</p>
+<div class="admonition question">
+<p class="admonition-title">What is the semantics of:</p>
+<p><div class="language-c++ highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">99</span><span class="p">;</span>
+</span></code></pre></div>
+This is an <em>assignment</em> statement. It means to put/assign the value 99 into the object named <code>length</code>.</p>
 </div>
 
 
@@ -898,6 +1031,12 @@ the assignment statement is read "Put 99 into the object named <code>length</cod
       <script src="../../../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
       
         <script src="../../../../js/mkdocs-charts-plugin.js"></script>
+      
+        <script src="../../../../javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
       
         <script src="../../../../javascripts/mathjax.js"></script>
       
