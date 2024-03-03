@@ -610,6 +610,33 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#data-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Types
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constants-and-literals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constants and Literals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expressions
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -816,6 +843,33 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#data-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Types
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constants-and-literals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constants and Literals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expressions
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -885,10 +939,10 @@ well defined. That is, there is one and only one interpretation for each stateme
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="hll"><span class="w">    </span><span class="n">length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">99</span><span class="p">;</span><span class="w"> </span><span class="c1">// What is the semantics of this statement? (1)</span>
 </span></span></code></pre></div>
 <ol>
-<li>Put 99 to the object named <code>length</code>.</li>
+<li>Put 99 to the object named by <code>length</code>.</li>
 </ol>
 <p>Here, as the left–hand operand of the assignment, <code>length</code> means "<em>the object named</em> <code>length</code>," so that
-the assignment statement is read "Put 99 into the object named <code>length</code>."</p>
+the assignment statement is read "Put 99 into the object named by <code>length</code>."</p>
 <h2 id="c-program-structure">C++ Program Structure</h2>
 <div class="language-cpp highlight"><span class="filename">A typical C++ program</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// this program outputs the message &quot; Hello World !&quot; to the monitor</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="cp">#</span><span class="w"> </span><span class="cp">include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
@@ -997,8 +1051,51 @@ This is a <em>definition</em>:</p>
 <p class="admonition-title">What is the semantics of:</p>
 <p><div class="language-c++ highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">99</span><span class="p">;</span>
 </span></code></pre></div>
-This is an <em>assignment</em> statement. It means to put/assign the value 99 into the object named <code>length</code>.</p>
+This is an <em>assignment</em> statement. It means to put/assign the value 99 into/to the object named by <code>length</code>.</p>
 </div>
+<div class="admonition question">
+<p class="admonition-title">What is the semantics of:</p>
+<p><div class="language-c++ highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kt">int</span><span class="w"> </span><span class="o">&amp;</span><span class="n">side</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">length</span><span class="p">;</span>
+</span></code></pre></div>
+<img _="," align="right" alt="Data Type" src="../../../../images/reference.svg" width="300" />
+Semantically, this is a <em>declaration</em> statement. It means as follows. The object named by <code>length</code> has a new (another) name, which is <code>side</code>, as shown: </p>
+</div>
+<h3 id="data-types">Data Types</h3>
+<ol>
+<li>Built-in data types:<ol>
+<li>Ordinal types: <code class="language-c++ highlight"><span class="kt">int</span></code>, <code class="language-c++ highlight"><span class="kt">char</span></code>.</li>
+<li>Boolean type: <code class="language-c++ highlight"><span class="kt">bool</span></code>.</li>
+<li>Floating-point types: <code class="language-c++ highlight"><span class="kt">float</span></code>, <code class="language-c++ highlight"><span class="kt">double</span></code>.</li>
+<li>String type: <code class="language-c++ highlight"><span class="n">string</span></code></li>
+</ol>
+</li>
+<li>Type modifiers:<ol>
+<li>Sign modifiers (for ordinal types): <code class="language-c++ highlight"><span class="kt">signed</span></code>, <code class="language-c++ highlight"><span class="kt">unsigned</span></code>.</li>
+<li>Size modifiers: <code class="language-c++ highlight"><span class="kt">short</span></code>, <code class="language-c++ highlight"><span class="kt">long</span></code>, <code class="language-c++ highlight"><span class="kt">long</span><span class="w"> </span><span class="kt">long</span></code>.</li>
+<li>Storage modifiers: <code class="language-c++ highlight"><span class="k">static</span></code>, <code class="language-c++ highlight"><span class="k">const</span></code>, <code class="language-c++ highlight"><span class="k">auto</span></code></li>
+</ol>
+</li>
+<li>Type specifier: <code class="language-c++ highlight"><span class="k">auto</span></code></li>
+</ol>
+<h3 id="constants-and-literals">Constants and Literals</h3>
+<ol>
+<li>Integer constants: <code>3</code>, <code>-40</code>, <code>'a'</code>, <code>'B'</code>, <code>'+'</code>, <code>023</code>, <code>0xFA</code></li>
+<li>Floating-point constants: <code>1.2</code>, <code>2.001</code>, <code>-0.0234</code>, <code>9e-5</code>, <code>-2.34E3</code></li>
+<li>Boolean constants: <code class="language-c++ highlight"><span class="nb">true</span></code>, <code class="language-c++ highlight"><span class="nb">false</span></code>.</li>
+<li>Recall that literals are <em>named</em> constant<ol>
+<li>Example (1): <code class="language-c++ highlight"><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">LENSIZE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span></code> Here <code>LENSIZE</code> is a constant integer with value <code>10</code>.</li>
+<li>Example (2): <code class="language-c++ highlight"><span class="k">constexpr</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">PI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.14159</span><span class="p">;</span></code></li>
+</ol>
+</li>
+</ol>
+<h3 id="expressions">Expressions</h3>
+<p>An expression can be:</p>
+<ol>
+<li>an arithmetic operation</li>
+<li>a logical operation that evaluates to TRUE or FALSE</li>
+<li>a function call</li>
+<li>A constant</li>
+</ol>
 
 
 
