@@ -16,4 +16,22 @@
             mask-image: var(--md-admonition-icon--exercise);
   }
 
+  #darkgray
+  {
+    background-color:darkgray;
+  }
   
+  #lightgray
+  {
+    background-color:coral;
+  }
+
+  #shade
+  {
+    background-color: rgba(43, 155, 70, 0.1);
+  }
+
+  #grayfont
+  {
+    color: gray;
+  }
